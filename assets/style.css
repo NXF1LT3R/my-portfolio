@@ -10,14 +10,6 @@
     box-sizing: border-box;
   }
 
-.profile-picture {
-    width: 25%;
-    height: 25%;
-    display: flex;
-    flex: wrap;
-    justify-content: center;
-}
-
 .contact-picture {
   width: 40%;
   height: 40%;
@@ -124,6 +116,10 @@ section {
   align-items: center;
 }
 
+.section-images img {
+  flex-basis: 25%;
+}
+
 /* SECTION TITLE STYLES START */
 .section-title {
   font-size: 48px;
@@ -155,6 +151,16 @@ section {
 
 .flex-row {
   display: flex;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+}
+
+.work-link {
+
 }
 
 /* CONTACT INFO STYLES */
