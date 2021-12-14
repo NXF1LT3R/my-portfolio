@@ -117,7 +117,7 @@ section {
 }
 
 .section-images img {
-  flex-basis: 25%;
+  width: 25%; min-width: 340px;
 }
 
 /* SECTION TITLE STYLES START */
@@ -151,16 +151,36 @@ section {
 
 .flex-row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .work {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 50%;
+  justify-content: center;
 }
 
 .work-link {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  height: 40%;
+  background-color: var(--primary-color);
+  justify-content: center;
+}
 
+.work-link img {
+  width: 60%; min-width: 500px;
+  height: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .work-link {
+    flex-basis: 100%;
+  }
 }
 
 /* CONTACT INFO STYLES */
@@ -189,7 +209,9 @@ section {
 }
 
 .contact-info p, .contact-info address {
-  margin: 20px 0;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.5;
   font-size: 22px;
   font-style: normal;
@@ -198,4 +220,18 @@ section {
 
 .contact-info a {
   color: var(--tertiary-color);
+}
+
+.contact-me {
+  flex-basis: 100%;
+}
+
+@media screen and (max-width: 575px) {
+  .work-link {
+    width: 80%;
+  }
+  
+  .work-link img {
+    width: 100%;
+  }
 }
